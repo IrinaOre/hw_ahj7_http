@@ -1,5 +1,5 @@
 export default async function createRequest(options) {
-  const baseUrl = 'http://localhost:7070/';
+  const baseUrl = 'http://localhost:7070';
 
   const { method, url, body } = options;
 
