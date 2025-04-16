@@ -1,10 +1,10 @@
 export default async function createRequest(options) {
-  const baseUrl = 'http://localhost:7070/?';
+  const baseUrl = 'http://localhost:7070';
 
   const { method, url, body } = options;
 
   try {
-    const response = await fetch(baseUrl + url, {
+    const response = await fetch(`${baseUrl}?${url}`, {
       method,
       headers: {
         'Content-Type': 'application/json',
